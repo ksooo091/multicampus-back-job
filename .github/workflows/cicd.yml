@@ -22,8 +22,6 @@ jobs:
     
       - name: Build with Gradle
         run: |
-          echo "${{ secrets.RDS_INFO }}" >> src/main/resources/config/application-dev.yml
-          cat src/main/resources/config/application-dev.yml
           chmod +x ./gradlew
           ./gradlew clean build
 

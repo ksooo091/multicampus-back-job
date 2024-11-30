@@ -94,3 +94,6 @@ spring:
     hikari:
       poolName: Hikari
       auto-commit: false
+    username: multi #weplat
+    password: multiPass #weplatweplat
+    url: jdbc:mysql://rds.cfaeua06gvli.ap-northeast-2.rds.amazonaws.com:3306/jobposting?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
