@@ -21,7 +21,9 @@ jobs:
         with:
           java-version: "11"
           distribution: "temurin"
-    
+      - name: Add RDS info
+        run: |
+          echo "${{ secrets.RDS_INFO }}" | base64 --decode >> src/main/resources/config/application-dev.yml
       - name: Build with Gradle
         run: |
           chmod +x ./gradlew
